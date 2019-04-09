@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="description" content="Responsive Images course project" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+
+    <p>My Profile</p>
+    <p>Eqi Dwi Rahmawati</p>
+    
+    <figure>
+        <picture>
+            <source media="(min-width: 500px)" 
+                srcset="images/pf_xl.jpeg 2x, 
+                        images/pf_l.jpeg" />
+            <source media="(min-width: 500px)" 
+                srcset="images/pf_m.jpeg" />
+            <img src="images/pf_s.jpeg" alt="My Profile">
+        </picture>
+    </figure>
+
+    <p>Nama saya Eqi Dwi Rahmawati. Saya adalah anak bungsu dari 2 bersaudara. Lahir pada tanggal 24 Agustus 1997. Sekarang saya sedang menempuh pendidikan di perguruan tinggi STMIK AKAKOM Yogyakarta jurusan Sistem Informasi. Saya di jogja tinggal di di kecamatan Sleman. Saya asli orang jawa yang tinggal di Rembang. Agama saya Islam begitu juga dengan orang tua dan saudara saya. </p>
+    <p>Secara kepribadian saya cukup disiplin, humoris, sangat menghargai orang lain apalagi terhadap orang yang lebih tua. Saya juga selalu bersikap ramah tamah dan murah senyum. Dalam setiap pribadi pasti mempunyai kekurangan begitupun dengan saya, terkadang saya mudah marah, sedikit pendiam dan pemalu. Jika marah ekspresi raut wajah saya selalu terlihat jelas. Saya lebih suka menghabiskan waktu dirumah dibandingkan diluar tanpa kegiatan yang jelas. Saya juga lebih memilih mempunyai beberapa teman yang baik dibandingkan dengan mempunyai banyak teman yang tidak baik.</p>
+    <p>Menurut Saya keluarga adalah segalanya, karena mereka yang selalu memberikan semangat dan selalu mendukung Saya dengan kegiatan positif. Saya selalu bersyukur dengan apa yang Tuhan berikan di dalam kehidupan Saya. Hal yang selalu ingin Saya lakukan adalah bisa membahagiakan orang tua dengan membuat mereka bangga dan bisa menjadi orang yang berguna untuk orang lain.</p>
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('eqi-service-worker.js')
+		.then(function(registration) {
+			console.log('Registered:', registration);
+	})
+	.catch(function(error) {
+		console.log('Registration failed: ', error);
+	});
+}
+</script>
+	</body>
+</html>
+<!-- Step 2 : Pada bagian program ini terdapat kode yang digunakan pertama-tama untuk memeriksa apakah pekerja layanan didukung oleh browser.
+Jika ya, layanan pekerja yang baru saja kita tulis terdaftar, memulai proses instalasi. --!>
